@@ -13,6 +13,4 @@ bin-release/
 *.ipa
 *.apk
 
-
-themes/
 run.sh
