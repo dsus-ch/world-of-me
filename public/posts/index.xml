@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - My New Hugo Site</title>
+        <link>http://localhost:1313/posts/</link>
+        <description>All Posts | My New Hugo Site</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title></title>
+    <link>http://localhost:1313/posts/stl/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/stl/</guid>
+    <description><![CDATA[Vector List 双向链表
+Deque Map ]]></description>
+</item>
+</channel>
+</rss>
