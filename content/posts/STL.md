@@ -17,7 +17,7 @@ draft = true
 ## Deque
 `priority_queue`优先队列，操作遵循队列的FIFO原则，但是里面的元素是优先级排列的，STL的优先队列默认是**大顶堆**实现的，可以通过`greater<int>`改变优先级为小顶堆。
 
-![alt](/static/pq_base.png)
+![alt](/img/stl-01.png)
 
 ```cpp
 // 引入头文件
