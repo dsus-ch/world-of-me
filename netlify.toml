@@ -1,6 +1,11 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify"
+command = "hugo --gc --minify --theme=LoveIt"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [context.production.environment]
 HUGO_VERSION = "0.124.1"
@@ -8,20 +13,20 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
 [context.split1]
-command = "hugo --cleanDestinationDir --forceSyncStatic --gc --ignoreCache --minify"
+command = "hugo --gc --minify --theme=LoveIt"
 
 [context.split1.environment]
 HUGO_VERSION = "0.124.1"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify --theme=LoveIt --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.124.1"
 
 [context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify -b --theme=LoveIt $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.124.1"
